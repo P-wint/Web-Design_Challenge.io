@@ -3,118 +3,115 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Bootstrap Visualization Dashboard</title>
 
-    <!--CSS Link-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
 
-
-    <!-- Bootstrap CSS-->
-
-    <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
 </head>
 
 <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
 
-    </div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" style="background-color: rgb(72, 209, 204);" href="index.html">Latitude</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <div class="col-xs-9 phone-nav">
+                        <a class="navbar-brand" href="#" id="logo">Latitude</a>
+                    </div>
+                </div>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#">id="navbarNavDropdownMenuLink" <data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-
-                            </plots>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <div class="dropdown_item" href="max_temperature.html">Max Temperature</a>
-                            <div class="dropdown_item" href="humidity.html">Humidity</a>
-                                <div class="dropdown_item" href="cloudiness.html">Cloudiness</a>
-                                    <div class="dropdown_item" href="windspeed.html">Windspeed</a>
-
-                                    </div>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparisions.html">Comparisons</a>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">data</a>
-                </li>
-            </ul>
+                <!--the nav links-->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="visualization/max_temperature.html">Max Temperature</a></li>
+                                <li><a href="visualization/humidity.html">Humidity</a></li>
+                                <li><a href="visualization/cloudiness.html">Cloudiness</a></li>
+                                <li><a href="visualization/windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a href="data.html">Data</a></li>
+                    </ul>
+                </div>
             </div>
+        </div>
     </nav>
 
     <div class="container">
-        <div class="row">
-            <dic class="col-lg-7 col-md-12">
-                <!--Left box-->
-                <div class="box">
-                    <h3 class="title">Summary:Latitude vs.</h3>
-                    <hr>
-
-                    <h1>WeatherPy</h1>
-                    <section>
-                        <id="WeatherPy">
-                            <figure>
-                                <a target="_blank" href="Resources/assets/images/Fig1.png">
-                                    <img src="Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Map">
-                                    <p>
-
-                </div>
-
-        </div>
-
-        <div class="col-lg-5 col-md-12">
-            <!--Right Box-->
-            <div class="box">
-                <h5 class="title">Visualization</h5>
-                <hr>
-
-                <div class="container">
-                    <div class="row" style="padding-bottom: 30px;">
-                        <div class="col-6">
-                            <a href="max_temperature.html">
-
-                                <figcaption><em>Max Temperature Map</em></p>
-
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="humidity.html">
-                                <img src="Resources/assets/images/Fig2.png" alt="Humidity Map">
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row" style="padding-bottom: 30px;">
-                        <div class="col-6">
-                            <a href="cloudiness.html">
-                                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness Map">
-
-                            </a>
-                        </div>
-
-                        <div class="col-6">
-                            <a href="Windspeed.html">
-                                <img src="Resources/assets/images/Fig4.png" alt="Windspeed Map">
-
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+        <section class="row">
+            <div class="col-md-8">
+                <article class="description-content">
+                    <h1 class="description-header">Summary: Latitude vs. X</h1>
+                    <hr class="description-hr" />
+                    <img src="assets/images/Fig1.png" alt="" id="description-image" />
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations
+                        created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </article>
             </div>
+            <div class="col-md-4">
+
+                <!-- Start of Visualizations -->
+                <section id="imageNav-area">
+                    <div class="imageNav-content">
+                        <h2 class="imageNav-header">Visualizations</h2>
+                        <hr />
+                        <div>
+                            <div class="col-sm-3">
+                                <h2 class="comparison-header">vs. Max Temperature</h2>
+                                <a href="visualizations/max_temperature.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                                <hr class="visible-xs">
+                            </div>
+                            <div class="col-sm-3">
+                                <h2 class="comparison-header">vs. Humidity</h2>
+                                <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo">"></a>
+                                <hr class="visible-xs">
+                            </div>
+                            <div class="col-sm-3">
+                                <h2 class="comparison-header">vs. Cloudiness</h2>
+                                <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo">></a>
+                                <hr class="visible-sm">
+                            </div>
+                            <div class="col-sm-3">
+                                <h2 class="comparison-header">vs. Wind Speed</h2>
+                                <a href="visualizations/windspeed.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo">"></a>
+                                <hr class="visible-sm">
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="two-toned-footer-color"></div>
+        <p> copyright bootcamp 2021</p>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
